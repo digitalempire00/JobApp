@@ -155,7 +155,7 @@ public class EducationFragment extends Fragment {
 
         Fragment fragment=new WorkFragment();
         FragmentTransaction fr=getActivity().getSupportFragmentManager().beginTransaction();
-        fr.replace(R.id.fragment_container, fragment, "Education");
+        fr.replace(R.id.fragment_container, fragment, "work");
         fr.addToBackStack(null);
         fr.commit();
 

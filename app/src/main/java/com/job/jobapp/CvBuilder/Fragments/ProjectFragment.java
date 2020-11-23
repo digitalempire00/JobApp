@@ -242,7 +242,7 @@ public class ProjectFragment extends Fragment {
 
         Fragment fragment=new SkillFragment();
         FragmentTransaction fr=getActivity().getSupportFragmentManager().beginTransaction();
-        fr.replace(R.id.fragment_container, fragment, "Projects");
+        fr.replace(R.id.fragment_container, fragment, "skill");
         fr.addToBackStack(null);
         fr.commit();
 

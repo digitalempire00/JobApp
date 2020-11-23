@@ -254,7 +254,7 @@ public class WorkFragment extends Fragment {
 
         Fragment fragment=new ProjectFragment();
         FragmentTransaction fr=getActivity().getSupportFragmentManager().beginTransaction();
-        fr.replace(R.id.fragment_container, fragment, "Projects");
+        fr.replace(R.id.fragment_container, fragment, "project");
         fr.addToBackStack(null);
         fr.commit();
 

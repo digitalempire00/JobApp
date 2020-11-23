@@ -1,7 +1,6 @@
 package com.job.jobapp.CvBuilder.Fragments;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,9 +29,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.job.jobapp.CvBuilder.Adapters.ProjectAdapter;
 import com.job.jobapp.CvBuilder.Adapters.SkillAdapter;
-import com.job.jobapp.CvBuilder.Models.Project;
 import com.job.jobapp.CvBuilder.Models.Skill;
 import com.job.jobapp.R;
 
@@ -198,12 +195,20 @@ public class SkillFragment extends Fragment {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowToast("you Pressed Next button");
+              loadNextFragment();
             }
         });
 
     }
+    private void loadNextFragment() {
 
+        Fragment fragment=new SummaryFragment();
+        FragmentTransaction fr=getActivity().getSupportFragmentManager().beginTransaction();
+        fr.replace(R.id.fragment_container, fragment, "summary");
+        fr.addToBackStack(null);
+        fr.commit();
+
+    }
     @SuppressLint("UseCompatLoadingForDrawables")
     private void arrangeStar(int i) {
        resetStar();

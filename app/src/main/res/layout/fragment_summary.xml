@@ -71,7 +71,7 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -103,7 +103,7 @@
             android:textColor="@color/top_text_color" />
 
         <Button
-            android:id="@+id/buttonNext"
+            android:id="@+id/buttonMainMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -111,7 +111,7 @@
             android:layout_weight="1"
             android:background="@drawable/buttons_background"
             android:inputType="textCapSentences"
-            android:text="Next"
+            android:text="Main Menu"
             android:textAllCaps="false"
             android:textColor="@color/top_text_color" />
     </LinearLayout>

@@ -156,7 +156,7 @@ LinearLayout linearLayoutProgress;
 
         Fragment fragment=new EducationFragment();
         FragmentTransaction fr=getActivity().getSupportFragmentManager().beginTransaction();
-        fr.replace(R.id.fragment_container, fragment, "Education");
+        fr.replace(R.id.fragment_container, fragment, "education");
         fr.addToBackStack(null);
         fr.commit();
 
