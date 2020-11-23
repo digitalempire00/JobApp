@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Jobapp</string>
+    <string name="appTitle">Canada jobs haring company ®</string>
+    <string name="splash_instructions_tag_1">Search and apply for open role</string>
+    <string name="splash_instructions_tag_2">Connect with people with real time </string>
+    <string name="splash_instructions_tag_3">Get relevant insight on the go</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="busnis_descriptions">Job App is an Candaion worldwide employment app for job listings in progress. It is a subsidiary of Japan\'s Recruit Co. Ltd. and is co-headquartered in Austin, Texas and Stamford, Connecticut with additional offices around the world. it will be replace with original content</string>
+
+
+</resources>

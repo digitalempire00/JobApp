@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mapType"
+            android:title="Change Map Type"
+
+
+            android:visible="true" />
+
+        <item
+            android:id="@+id/nav_aboutUS"
+            android:title="About us"
+
+
+            />
+
+        <item
+            android:id="@+id/nav_contactUS"
+            android:title="Contact Us" />
+
+
+        <item
+            android:id="@+id/nav_google_search"
+
+            android:title="Google Search" />
+
+        <item
+            android:id="@+id/logout"
+          
+            android:title="LogOut" />
+
+
+
+    </group>
+
+</menu>

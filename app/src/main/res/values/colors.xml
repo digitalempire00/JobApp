@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20A9BD</color>
+    <color name="colorPrimaryDark">#20A9BD</color>
+    <color name="colorAccent">#20A9BD</color>
+    <color name="background">#FFFFFF</color>
+    <color name="app_color">#247044</color>
+    <color name="widget_color">#20A9BD</color>
+    <color name="top_text_color">#FFFFFF</color>
+    <color name="warning_color">#F32020</color>
+    <color name="textPlusBorderColor">#020E57</color>
+    <color name="hading_color">#20A9BD</color>
+    <color name="color_selected">#C6C616</color>
+    <color name="item_color">#8591A6</color>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/root"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_app_logo"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/startPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/companyRegistrationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_background"
+            android:text="Company Registration"
+            android:textAllCaps="false"
+            android:textColor="@color/top_text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/userRegistrationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_background"
+            android:text="Employee Registration"
+            android:textAllCaps="false"
+            android:textColor="@color/top_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+
+            android:text="Already have Account? Login"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
